@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB-115 Final Project</title>
+  </head>
+  <style>
+    .banner {
+      background-color: #a0c9a0;
+      color: rgb(139, 16, 16);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .banner img {
+      max-width: 300px;
+    }
+    .banner div {
+      flex: 1;
+      padding-left: 20px;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <body>
+    <div class="banner">
+      <img src="mealprep.jpg" />
+      <div>
+        <h3>Perfectly Portioned Fitness - Build Your Own Meal Plan</h3>
+        <h5><em>Taylor Svoboda WEB-115-0001</em></h5>
+      </div>
+    </div>
+    <form id="form">
+      <table style="padding-top: 10px">
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="goal">Goal for the week:</label></td>
+          <td><input type="text" id="goal" /></td>
+        </tr>
+      </table>
+
+      <h3>Meal Plan for the Week</h3>
+      <table style="padding-bottom: 10px">
+        <thead>
+          <tr>
+            <th>Meal</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Breakfast</td>
+            <td><input type="text" id="mondayBreakfast" value="" /></td>
+            <td><input type="text" id="tuesdayBreakfast" value="" /></td>
+            <td><input type="text" id="wednesdayBreakfast" value="" /></td>
+            <td><input type="text" id="thursdayBreakfast" value="" /></td>
+            <td><input type="text" id="fridayBreakfast" value="" /></td>
+            <td><input type="text" id="saturdayBreakfast" value="" /></td>
+            <td><input type="text" id="sundayBreakfast" value="" /></td>
+          </tr>
+          <tr>
+            <td>Snack</td>
+            <td><input type="text" id="mondaySnack" value="" /></td>
+            <td><input type="text" id="tuesdaySnack" value="" /></td>
+            <td><input type="text" id="wednesdaySnack" value="" /></td>
+            <td><input type="text" id="thursdaySnack" value="" /></td>
+            <td><input type="text" id="fridaySnack" value="" /></td>
+            <td><input type="text" id="saturdaySnack" value="" /></td>
+            <td><input type="text" id="sundaySnack" value="" /></td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td><input type="text" id="mondayLunch" value="" /></td>
+            <td><input type="text" id="tuesdayLunch" value="" /></td>
+            <td><input type="text" id="wednesdayLunch" value="" /></td>
+            <td><input type="text" id="thursdayLunch" value="" /></td>
+            <td><input type="text" id="fridayLunch" value="" /></td>
+            <td><input type="text" id="saturdayLunch" value="" /></td>
+            <td><input type="text" id="sundayLunch" value="" /></td>
+          </tr>
+          <tr>
+            <td>Snack</td>
+            <td><input type="text" id="mondayPmSnack" value="" /></td>
+            <td><input type="text" id="tuesdayPmSnack" value="" /></td>
+            <td><input type="text" id="wednesdayPmSnack" value="" /></td>
+            <td><input type="text" id="thursdayPmSnack" value="" /></td>
+            <td><input type="text" id="fridayPmSnack" value="" /></td>
+            <td><input type="text" id="saturdayPmSnack" value="" /></td>
+            <td><input type="text" id="sundayPmSnack" value="" /></td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td><input type="text" id="mondayDinner" value="" /></td>
+            <td><input type="text" id="tuesdayDinner" value="" /></td>
+            <td><input type="text" id="wednesdayDinner" value="" /></td>
+            <td><input type="text" id="thursdayDinner" value="" /></td>
+            <td><input type="text" id="fridayDinner" value="" /></td>
+            <td><input type="text" id="saturdayDinner" value="" /></td>
+            <td><input type="text" id="sundayDinner" value="" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button type="button" id="clearButton">Clear Planner</button>
+      <button type="button" id="createButton">View Meal Plan</button>
+    </form>
+  </body>
+  <script src="projectJS.js"></script>
+</html>
